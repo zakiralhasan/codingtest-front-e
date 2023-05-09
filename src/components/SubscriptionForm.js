@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import hitToast from '../helpers/hitToast';
 
-export default function SubscriptionForm() {
+const SubscriptionForm = () => {
   let [email, setEmail] = useState('');
   let [alertClass, setAlertClass] = useState('');
 
@@ -46,3 +46,4 @@ export default function SubscriptionForm() {
     </form>
   );
 }
+export default SubscriptionForm;

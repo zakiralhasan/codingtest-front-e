@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Counter() {
+const Counter = () => {
   let [clockData, setClockData] = useState({
     dd: 0,
     hh: 0,
@@ -58,3 +58,4 @@ export default function Counter() {
     </div>
   );
 }
+export default Counter;

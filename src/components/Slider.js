@@ -5,8 +5,7 @@ import bg01 from '../assets/images/bg01.jpg';
 import bg02 from '../assets/images/bg02.jpg';
 import bg03 from '../assets/images/bg03.jpg';
 
-
-export default function Slider() {
+const Slider = () => {
   let [slide, setSlide] = useState(bg03);
 
   useEffect(() => {
@@ -29,3 +28,4 @@ export default function Slider() {
     </div>
   );
 }
+export default Slider;
