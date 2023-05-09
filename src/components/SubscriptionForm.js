@@ -12,7 +12,7 @@ export default function SubscriptionForm() {
       setAlertClass('alert-validate');
       return;
     }
-    fetch('http://103.108.146.90:5000/sendemail', {
+    fetch('http://localhost:5000/sendemail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
