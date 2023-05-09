@@ -1,10 +1,9 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import hitToast from '../helpers/hitToast';
 
 export default function SubscriptionForm() {
   let [email, setEmail] = useState('');
   let [alertClass, setAlertClass] = useState('');
-  var parentComp = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,7 +38,7 @@ export default function SubscriptionForm() {
 
   return (
     <form className="w-full flex-w flex-c-m validate-form" onSubmit={handleSubmit}>
-      <div ref={parentComp} className={"wrap-input100 validate-input where1 " + alertClass} data-validate="Valid email is required: user@email.domain">
+      <div className={"wrap-input100 validate-input where1 " + alertClass} data-validate="Valid email is required: user@email.domain">
         <input className="input100 placeholder0 s2-txt2" type="text" name="email" placeholder="Enter Email Address" onChange={e => setEmail(e.target.value)} />
         <span className="focus-input100"></span>
       </div>
